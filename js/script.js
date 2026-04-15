@@ -24,5 +24,10 @@ function suma(a = 0, b = 0) {
     console.log(resultado);
 }
 document.addEventListener("click", function() {
-    document.body.style.backgroundColor = "lightblue";
+    const random1 = Math.floor(Math.random() * 255);
+    const random2 = Math.floor(Math.random() * 255);
+    const random3 = Math.floor(Math.random() * 255);
+
+    const rgb = "rgb(" + random1 + "," + random2 + "," + random3 + ")";
+    document.body.style.backgroundColor = rgb;
 });
