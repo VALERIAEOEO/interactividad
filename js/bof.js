@@ -17,3 +17,19 @@ btnDark.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
 
 });
+
+let size = 10;
+let fill_color = "goldenrod";
+let stroke_color = "goldenrod";
+
+function setup () {
+    createCanvas(windowWidth, windowHeight);
+    background(100);
+    noCursor();
+}
+    function draw() {
+        background(30,70,170,50);
+        fill(fill_color);
+        stroke(stroke_color);   
+        ellipse(mouseX, mouseY, size);
+}
